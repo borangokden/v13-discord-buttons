@@ -1,0 +1,27 @@
+{
+    "bot": {
+        "token": "OTMwNDkxNDIzNDExNzk4MDQ2.Yd2pqw.MLzl6g5yLBcGaCF6VUBlTfc_3GI",
+        "owner": "KENDI ID'N",
+        "prefix": ".",
+        "BotStatus": "BOT DURUM",
+        "BotFooter": "BOT FOOTER",
+        "cooldown": 8
+    },
+    "channels": {
+        "voicechannel": "BOT SES KANALI ID"
+    },
+    "BoranGkdn": {
+        "GuildID": "SUNUCU ID",
+        "OwnerRole": "KURUCU ROL ID"
+    },
+    "emojis": {
+        "tada": "CEKİLİS EMOJİ",
+        "yes": "ONAY EMOJİ",
+        "no": "RED EMOJİ"
+    },
+        "buttons": {
+            "çekiliş": "ÇEKİLİŞ KATILIMCISI ID",
+            "etkinlik": "ETKİNLİK KATILIMCISI ID"
+        }
+    }
+    
