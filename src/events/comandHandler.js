@@ -12,9 +12,9 @@ module.exports = async (message) => {
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || [...client.commands.values()].find((e) => e.aliases && e.aliases.includes(command));
     const author = message.author
-    const channel = message.channel
+    const channel = message.channel 
     const guild = message.guild
-    const embed = new MessageEmbed().setColor(message.member.displayHexColor).setAuthor({name: message.member.displayName, iconURL: author.avatarURL({ dynamic: true, size: 2048 })}).setFooter({text: (config.bot.BotFooter) , iconURL: ownerr.avatarURL({ dynamic: true, size: 2048 })})
+    const embed = new MessageEmbed().setColor(message.member.displayHexColor).setAuthor({name: message.member.displayName)).setFooter({text: (config.bot.BotFooter))
 
     if (cmd) {
         if (cmd.owner && config.bot.owner !== author.id) return;
