@@ -13,10 +13,10 @@ module.exports = async client => {
     };
 
     TextChannel.prototype.error = async function (message, text) {
-        const embed = new MessageEmbed()
+    const embed = new MessageEmbed()        
         .setColor(message.member.displayHexColor)
-        .setAuthor({name: message.member.displayName, iconURL: author.avatarURL({ dynamic: true, size: 2048 })})
-        .setFooter({text: (config.bot.BotFooter) , iconURL: ownerr.avatarURL({ dynamic: true, size: 2048 })})
+        .setAuthor({name: message.member.displayName})
+        .setFooter({text: (config.bot.BotFooter)})
         this.send({ embeds: [embed.setDescription(text)] }).then(x => { if (x.deletable) setTimeout(() => { x.delete(); }, 10000) });
     };
 
