@@ -14,8 +14,10 @@ module.exports = async (message) => {
     const author = message.author
     const channel = message.channel 
     const guild = message.guild
-    const embed = new MessageEmbed().setColor(message.member.displayHexColor).setAuthor({name: message.member.displayName)).setFooter({text: (config.bot.BotFooter))
-
+        const embed = new MessageEmbed()        
+        .setColor(message.member.displayHexColor)
+        .setAuthor({name: message.member.displayName})
+        .setFooter({text: (config.bot.BotFooter)})
     if (cmd) {
         if (cmd.owner && config.bot.owner !== author.id) return;
         if (cmd.guildowner && config.bot.owner !== author.id && guild.owner.id !== author.id) return;
